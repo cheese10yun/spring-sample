@@ -39,4 +39,4 @@ jobs:
           key: spring-sample-{{ checksum "build.gradle" }}
 
       # run tests!
-      - run: ./gradlew jacocoTestReport coveralls
+      - run: ./gradlew jacocoTestReport coveralls:report
