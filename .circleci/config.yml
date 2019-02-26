@@ -44,4 +44,4 @@ jobs:
       # run tests!
       - run:
           ./gradlew jacocoTestReport coveralls
-#          - bash <(curl -s https://codecov.io/bash)
+          bash <(curl -s https://codecov.io/bash)
