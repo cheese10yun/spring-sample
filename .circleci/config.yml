@@ -42,6 +42,5 @@ jobs:
           key: spring-sample-{{ checksum "build.gradle" }}
 
       # run tests!
-      - run:
-          ./gradlew jacocoTestReport coveralls
-          bash <(curl -s https://codecov.io/bash)
+      - run: ./gradlew jacocoTestReport coveralls
+      - run: bash <(curl -s https://codecov.io/bash)
