@@ -21,6 +21,9 @@ jobs:
       JVM_OPTS: -Xmx3200m
       TERM: dumb
       COVERALLS_REPO_TOKEN: DQwXO5mLNBziP1gDmGPivgCYGLbIh58xp
+      CODECOV_TOKEN: 074fa111-02cb-4e6c-b144-3f3601933555
+
+
 
     steps:
       - checkout
