@@ -9,15 +9,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/members")
 public class MemberApi {
 
-    @GetMapping("/{id}")
-    public Member getMember(@PathVariable long id) {
+  @GetMapping("/{id}")
+  public Member getMember(@PathVariable long id) {
 
-        return Member.builder()
-                .id(id)
-                .email("yun@test.com")
-                .name("name")
-                .build();
+    return Member.builder()
+        .id(id)
+        .email("yun@test.com")
+        .name("name")
+        .build();
 
-    }
+  }
 
 }
