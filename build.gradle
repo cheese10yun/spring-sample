@@ -63,14 +63,18 @@ test {
     outputs.dir snippetsDir
 }
 
-asciidoctor {
-    inputs.dir snippetsDir
-    dependsOn test
-}
+//asciidoctor {
+//    inputs.dir snippetsDirk
+//    dependsOn test
+//}
 
 bootJar {
     dependsOn asciidoctor
     from ("${asciidoctor.outputDir}/html5") {
         into 'static/docs'
     }
+}
+
+bootRun {
+    main = 'com.gradle.sample.SampleApplication'
 }
