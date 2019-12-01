@@ -24,15 +24,15 @@ public class Member  {
     private long id;
 
     @Column(name = "name", nullable = false, unique = true)
-    private String realName;
+    private String name;
 
     @Column(name = "email", nullable = false, unique = true)
-    private String realEmail;
+    private String email;
 
     @Builder
-    public Member(long id, String realName, String realEmail) {
+    public Member(long id, String name, String email) {
         this.id = id;
-        this.realName = realName;
-        this.realEmail = realEmail;
+        this.name = name;
+        this.email = email;
     }
 }

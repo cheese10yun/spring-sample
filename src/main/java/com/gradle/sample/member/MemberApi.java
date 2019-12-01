@@ -15,8 +15,8 @@ public class MemberApi {
   public Member getMember(@PathVariable long id) {
 
     return  Member.builder()
-          .realEmail("asd@asd.com")
-          .realName("asd")
+          .email("asd@asd.com")
+          .name("asd")
           .build();
 
   }
